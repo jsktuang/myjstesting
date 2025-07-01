@@ -1,3 +1,6 @@
+
+// Use of if . . . else statements
+
 let userRole = "admin";
 let accessLevel;
 
@@ -13,6 +16,8 @@ console.log("Access Level: ", accessLevel);
 
 // Output: Full access granted
 
+
+// Implement nested if ...else statements
 let isLoggedIn = true;
 let userMessage;
 
@@ -27,6 +32,8 @@ if (isLoggedIn) {
 }
 console.log("User message:", userMessage);
 
+
+//Switch statement
 let userType = "subscriber";
 let userCategory;
 
@@ -46,6 +53,7 @@ switch (userType) {
 }
 console.log("User Category: ", userCategory);
 
+// Ternary operator
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Note authenticated";
 
