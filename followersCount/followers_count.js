@@ -20,6 +20,14 @@ function checkCountValue(){
     }
 
 
+// Function to reset the count to 0
+function resetCount(){
+    count = 0;       // reset count 
+    displayCount();  // Update the display
+    alert("Followers count has been reset!!");
+}
+
+
 // Display the count in the HTML
 function displayCount(){
     document.getElementById('countDisplay').innerHTML=count; 
