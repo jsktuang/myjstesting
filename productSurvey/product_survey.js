@@ -8,6 +8,7 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const userExperince = document.getElementById('expText').value;
 
     // Display thank you message
     alert('Thank you for your valuable feedback');
@@ -20,16 +21,21 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userExperince').innerHTML = userExperince; // New Display
     document.getElementById('userInfo').style.display = 'block';
 }
 
-// Set up event listeners
-const submitButton = document.getElementById('submitBtn');
-submitButton.onclick = submitFeedback;
 
-// Optional: Add keyboard support for form submission
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        submitFeedback();
-    }
+
+// Set up event listeners
+document.addEventListener('DOMContentLoaded', function () {
+    const submitButton = document.getElementById('submitBtn');
+    submitButton.onclick = submitFeedback;
+
+    // Optional: Add keyboard support for form submission
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            submitFeedback();
+        }
+    });
 });
